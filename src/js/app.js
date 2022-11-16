@@ -3,6 +3,14 @@ import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
 
+
+window.addEventListener('load', ()=>{
+  preloader.classList.add('hide')
+  if(preloader.classList.contains('hide')){
+    document.body.style.overflow = 'auto';
+  }
+})
+
 const headerWrapper = document.querySelector('.burger__wrapper');
 const headerBurger = document.querySelector('.header__burger')
 const nav = document.querySelector('.nav');
@@ -28,41 +36,43 @@ link.forEach(menulink =>{
 })
 
 
+
+
 // init Swiper:
-Swiper.use([Navigation, Pagination,Scrollbar,Autoplay,EffectFlip]);
+// Swiper.use([Navigation, Pagination,Scrollbar,Autoplay,EffectFlip]);
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    speed:900,
-    effect: "flip",
-        grabCursor: true,
-    simulateTouch:true,
-      touchRatio:1,
-      touchAngle:45,
-      grabCursor:true,
-      slideToClickedSlide:true,
-      autoHeight:true,
-      centeredSlides:true,
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     speed:900,
+//     effect: "flip",
+//         grabCursor: true,
+//     simulateTouch:true,
+//       touchRatio:1,
+//       touchAngle:45,
+//       grabCursor:true,
+//       slideToClickedSlide:true,
+//       autoHeight:true,
+//       centeredSlides:true,
 
-      keyboard:{
-        enabled:true,
-        onlyInViewport:true,
-        pageUpDown:true,
-      },
+//       keyboard:{
+//         enabled:true,
+//         onlyInViewport:true,
+//         pageUpDown:true,
+//       },
    
-    autoplay: {
-      delay: 3500,
-      stopOnLastSlide:true,
-      disableOnInteraction: false
-    },
+//     autoplay: {
+//       delay: 3500,
+//       stopOnLastSlide:true,
+//       disableOnInteraction: false
+//     },
 
-     navigation: {
-                        nextEl: '.custom-next',
-                        prevEl: '.custom-prev',
-                },
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                    draggable: true,
-                  },
-  });
+//      navigation: {
+//                         nextEl: '.custom-next',
+//                         prevEl: '.custom-prev',
+//                 },
+//                 scrollbar: {
+//                     el: '.swiper-scrollbar',
+//                     draggable: true,
+//                   },
+//   });
