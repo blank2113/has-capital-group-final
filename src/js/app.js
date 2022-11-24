@@ -53,27 +53,27 @@ document.addEventListener("DOMContentLoaded", (e) => {
     EffectCoverflow,
     EffectCreative,
   ]);
-  let swiper = new Swiper(".swiper-left", {
-    grabCursor: true,
-    effect: "creative",
-    creativeEffect: {
-      prev: {
-        shadow: true,
-        translate: [0, 0, -400],
-      },
-      next: {
-        translate: ["100%", 0, 0],
-      },
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "progressbar",
-    },
-    navigation: {
-      nextEl: ".custom-next",
-      prevEl: ".custom-prev",
-    },
-  });
+  // let swiper = new Swiper(".swiper-left", {
+  //   grabCursor: true,
+  //   effect: "creative",
+  //   creativeEffect: {
+  //     prev: {
+  //       shadow: true,
+  //       translate: [0, 0, -400],
+  //     },
+  //     next: {
+  //       translate: ["100%", 0, 0],
+  //     },
+  //   },
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //     type: "progressbar",
+  //   },
+  //   navigation: {
+  //     nextEl: ".custom-next",
+  //     prevEl: ".custom-prev",
+  //   },
+  // });
 
   let swiper_img = new Swiper(".swiper-right", {
     effect: "coverflow",
@@ -87,8 +87,16 @@ document.addEventListener("DOMContentLoaded", (e) => {
       modifier: 1,
       slideShadows: false,
     },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".custom-next",
+      prevEl: ".custom-prev",
+    },
   });
 
-  swiper.controller.control = swiper_img;
-  swiper_img.controller.control = swiper;
+  // swiper.controller.control = swiper_img;
+  // swiper_img.controller.control = swiper;
 });
