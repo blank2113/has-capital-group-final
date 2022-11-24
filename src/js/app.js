@@ -9,6 +9,8 @@ import Swiper, {
   Pagination,
   Scrollbar,
 } from "swiper";
+import * as flsFunctions from "./modules/functions.js";
+flsFunctions.isWebp();
 
 window.addEventListener("load", () => {
   preloader.classList.add("hide");
