@@ -36,15 +36,7 @@ export const scss = ()=>{
                 })
         )
     )
-    // .pipe(
-    //     app.plugins.if(
-    //         app.isBuild,
-    //         webpcss({
-    //                 webpClass: ".webp",
-    //                 noWebpClass: ".no-webp"
-    //             })
-    //     )
-    // )
+
     .pipe(app.gulp.dest(app.path.build.css))
     .pipe(
         app.plugins.if(
