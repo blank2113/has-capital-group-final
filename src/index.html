@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html',{ "title": "Has-capital-apartments" })
-  <body>
+@@include('html/head.html',{ "title": "Has-capital-apartments" })
+
+<body>
     <div id="preloader" class="preloader">
-      <div class="preloader__loader">
-        <div class="loadingio-spinner-double-ring-1x11iov467h"><div class="ldio-d4kxp3xgmhc">
-            <div></div>
-            <div></div>
-            <div><div></div></div>
-            <div><div></div></div>
-            </div></div>
-      </div>
+        <div class="preloader__loader">
+            <div class="loadingio-spinner-double-ring-1x11iov467h">
+                <div class="ldio-d4kxp3xgmhc">
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     @@include('html/header.html',{})
     <main>
-      @@include('html/top-content.html',{}) @@include('html/about.html',{})
-      @@include('html/services.html',{}) @@include('html/map.html',{})
-      @@include('html/prices.html',{}) @@include('html/statistic.html',{})
-      @@include('html/contacts.html',{})
+        @@include('html/top-content.html',{})
+        @@include('html/about.html',{})
+        @@include('html/services.html',{})
+        @@include('html/map.html',{})
+        @@include('html/slider.html',{})
+        @@include('html/prices.html',{})
+        @@include('html/statistic.html',{})
+        @@include('html/contacts.html',{})
     </main>
 
     @@include('html/footer.html',{})
-    <script src="js/app.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  </body>
+    <script src="js/app.min.js"></script>
+</body>
+
 </html>
